@@ -1,0 +1,46 @@
+
+mybatis-plus:
+  global-config:
+    db-config:
+      type-aliases-package: com.example.yuenandemo1.M1.entity
+      #配置数据库实体对象的位置和mapper映射文件的位置
+     # table-prefix: tbl_ #配置前缀这样就不需要全部写完表名了
+      id-type: auto # 迎合数据库的自动增加策略  #mybatisplus 可以直接继承basemappeer可以直接对数据库经行操作
+  configuration: #MP的日志信息
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  mapper-locations: classpath:/mappers/xml/*.xml
+#cj 是sql是jdbc更新过后的版本
+spring:
+  datasource:
+    type: com.zaxxer.hikari.HikariDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: root
+    url: jdbc:mysql://139.155.2.242:3306/yuenan_test?serverTimezone=UTC&useUnicode=true&characterEncoding=UTF-8
+  freemarker:
+    suffix: .html
+    cache: false
+    #上传大小限制为4mb总上传大小不限制
+  servlet:
+    multipart:
+      max-file-size: 5MB
+      max-request-size: -1
+
+
+
+#七牛云配置
+
+qiniu:
+  # 公钥
+  accessKey: tyJaED1yNNYTvwddQN2TC48D8uqWdnAtVib4niLt
+  # 私钥
+  secretKey: Nq3B4FRQhfzKS1RqKzrCatxvRPO06u1EV72s_GPB
+  # 存储空间名
+  bucketName: yuenan-zhaopin-img
+  # 域名/路径
+
+  imageUrl: rgwzi2aq2.hn-bkt.clouddn.com
+  # 空间里存储的文件名 不需要可以删除
+  documentName:
+
+

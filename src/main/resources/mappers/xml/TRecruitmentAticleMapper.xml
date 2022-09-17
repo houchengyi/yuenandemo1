@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.yuenandemo1.M1.mappers.TRecruitmentAticleMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.example.yuenandemo1.M1.entity.TRecruitmentAticle">
+        <id column="ID" property="id" />
+        <result column="Status" property="Status" />
+        <result column="Key_word" property="keyWord" />
+        <result column="Class" property="Class" />
+        <result column="Times_view" property="timesView" />
+        <result column="Times_share" property="timesShare" />
+        <result column="C_Content" property="cContent" />
+        <result column="V_Content" property="vContent" />
+        <result column="Rank" property="Rank" />
+        <result column="Avart_URL" property="avartUrl" />
+        <result column="User_name" property="userName" />
+        <result column="F_crawle" property="fCrawle" />
+        <result column="UUID" property="uuid" />
+        <result column="In_Date" property="inDate" />
+        <result column="Img_url" property="imgUrl" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        ID, Status, Key_word, Class, Times_view, Times_share, C_Content, V_Content, Rank, Avart_URL, User_name, F_crawle, UUID, In_Date, Img_url
+    </sql>
+
+</mapper>

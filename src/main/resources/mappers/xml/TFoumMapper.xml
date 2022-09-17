@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.yuenandemo1.M1.mappers.TFoumMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.example.yuenandemo1.M1.entity.TFoum">
+        <id column="ID" property="id" />
+        <result column="Status" property="Status" />
+        <result column="Key_word" property="keyWord" />
+        <result column="Class" property="Class" />
+        <result column="Time_view" property="timeView" />
+        <result column="Time_share" property="timeShare" />
+        <result column="C_Content" property="cContent" />
+        <result column="V_Content" property="vContent" />
+        <result column="Avatar_URL" property="avatarUrl" />
+        <result column="Username" property="Username" />
+        <result column="UUID" property="uuid" />
+        <result column="In_Date" property="inDate" />
+        <result column="Img_url" property="imgUrl" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        ID, Status, Key_word, Class, Time_view, Time_share, C_Content, V_Content, Avatar_URL, Username, UUID, In_Date, Img_url
+    </sql>
+
+</mapper>

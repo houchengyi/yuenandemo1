@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.yuenandemo1.M1.mappers.TKeyArticleMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.example.yuenandemo1.M1.entity.TKeyArticle">
+        <id column="id" property="id" />
+        <result column="key_word" property="keyWord" />
+        <result column="forum_id" property="forumId" />
+        <result column="recurit_id" property="recuritId" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, key_word, forum_id, recurit_id
+    </sql>
+
+</mapper>
